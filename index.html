@@ -195,7 +195,7 @@ function SoftSellBlock({form,setForm,color,topikKey}){
     });
   };
   const isOn=form.softSelling;
-  return <div style={{background:"linear-gradient(135deg,#0f0f28,#0c0c22)",border:`1px solid ${isOn?color+"40":"#1e1e48"}`,borderRadius:16,padding:20,transition:"all .3s",boxShadow:isOn?`0 0 20px ${color}12`:""inset 0 1px 0 rgba(255,255,255,.03)""}}>
+  return <div style={{background:"linear-gradient(135deg,#0f0f28,#0c0c22)",border:`1px solid ${isOn?color+"40":"#1e1e48"}`,borderRadius:16,padding:20,transition:"all .3s",boxShadow:isOn?`0 0 20px ${color}12`:"inset 0 1px 0 rgba(255,255,255,.03)"}}>
     <div style={{display:"flex",justifyContent:"space-between",alignItems:"center"}}>
       <div style={{display:"flex",alignItems:"center",gap:12,cursor:"pointer"}} onClick={()=>handleToggle(!isOn)}>
         <Toggle value={isOn} onChange={handleToggle} color={color}/>
