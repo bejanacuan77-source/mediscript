@@ -1,0 +1,2 @@
+# mediscript
+Generate AI Health
